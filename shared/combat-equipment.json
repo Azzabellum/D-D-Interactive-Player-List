@@ -1,0 +1,669 @@
+[
+  {
+    "id": "club",
+    "name": "Дубинка",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d4",
+      "damageType": "bludgeoning",
+      "properties": ["light"],
+      "mastery": "Slow"
+    }
+  },
+  {
+    "id": "dagger",
+    "name": "Кинжал",
+    "weightGrams": 454,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d4",
+      "damageType": "piercing",
+      "properties": ["finesse", "light", "thrown"],
+      "mastery": "Nick",
+      "range": "20/60"
+    }
+  },
+  {
+    "id": "greatclub",
+    "name": "Палица",
+    "weightGrams": 4536,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d8",
+      "damageType": "bludgeoning",
+      "properties": ["twoHanded"],
+      "mastery": "Push"
+    }
+  },
+  {
+    "id": "handaxe",
+    "name": "Ручной топор",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d6",
+      "damageType": "slashing",
+      "properties": ["light", "thrown"],
+      "mastery": "Vex",
+      "range": "20/60"
+    }
+  },
+  {
+    "id": "javelin",
+    "name": "Метательное копьё",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": ["thrown"],
+      "mastery": "Slow",
+      "range": "30/120"
+    }
+  },
+  {
+    "id": "hammer",
+    "name": "Лёгкий молот",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d4",
+      "damageType": "bludgeoning",
+      "properties": ["light", "thrown"],
+      "mastery": "Nick",
+      "range": "20/60"
+    }
+  },
+  {
+    "id": "mace",
+    "name": "Булава",
+    "weightGrams": 1814,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [],
+      "mastery": "Sap"
+    }
+  },
+  {
+    "id": "staff",
+    "name": "Боевой посох",
+    "weightGrams": 1814,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [],
+      "mastery": "Topple",
+      "versatile": "1d8"
+    }
+  },
+  {
+    "id": "sickle",
+    "name": "Серп",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d4",
+      "damageType": "slashing",
+      "properties": ["light"],
+      "mastery": "Nick"
+    }
+  },
+  {
+    "id": "spear",
+    "name": "Копьё",
+    "weightGrams": 1361,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "melee",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": ["thrown"],
+      "mastery": "Sap",
+      "range": "20/60",
+      "versatile": "1d8"
+    }
+  },
+  {
+    "id": "dart",
+    "name": "Дротик",
+    "weightGrams": 113,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "ranged",
+      "damage": "1d4",
+      "damageType": "piercing",
+      "properties": ["finesse", "thrown"],
+      "mastery": "Vex",
+      "range": "20/60"
+    }
+  },
+  {
+    "id": "light-crossbow",
+    "name": "Лёгкий арбалет",
+    "weightGrams": 2268,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "ranged",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": ["ammunition", "loading", "twoHanded"],
+      "mastery": "Slow",
+      "range": "80/320"
+    }
+  },
+  {
+    "id": "shortbow",
+    "name": "Короткий лук",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "ranged",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": ["ammunition", "twoHanded"],
+      "mastery": "Vex",
+      "range": "80/320"
+    }
+  },
+  {
+    "id": "sling",
+    "name": "Праща",
+    "weightGrams": 0,
+    "combat": {
+      "kind": "weapon",
+      "category": "simple",
+      "mode": "ranged",
+      "damage": "1d4",
+      "damageType": "bludgeoning",
+      "properties": ["ammunition"],
+      "mastery": "Slow",
+      "range": "30/120"
+    }
+  },
+  {
+    "id": "battleaxe",
+    "name": "Боевой топор",
+    "weightGrams": 1814,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d8",
+      "damageType": "slashing",
+      "properties": [],
+      "mastery": "Topple",
+      "versatile": "1d10"
+    }
+  },
+  {
+    "id": "flail",
+    "name": "Цеп",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d8",
+      "damageType": "bludgeoning",
+      "properties": [],
+      "mastery": "Sap"
+    }
+  },
+  {
+    "id": "glaive",
+    "name": "Глефа",
+    "weightGrams": 2722,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": ["heavy", "reach", "twoHanded"],
+      "mastery": "Graze"
+    }
+  },
+  {
+    "id": "greataxe",
+    "name": "Секира",
+    "weightGrams": 3175,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d12",
+      "damageType": "slashing",
+      "properties": ["heavy", "twoHanded"],
+      "mastery": "Cleave"
+    }
+  },
+  {
+    "id": "greatsword",
+    "name": "Двуручный меч",
+    "weightGrams": 2722,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "2d6",
+      "damageType": "slashing",
+      "properties": ["heavy", "twoHanded"],
+      "mastery": "Graze"
+    }
+  },
+  {
+    "id": "halberd",
+    "name": "Алебарда",
+    "weightGrams": 2722,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": ["heavy", "reach", "twoHanded"],
+      "mastery": "Cleave"
+    }
+  },
+  {
+    "id": "longsword",
+    "name": "Длинный меч",
+    "weightGrams": 1361,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d8",
+      "damageType": "slashing",
+      "properties": [],
+      "mastery": "Sap",
+      "versatile": "1d10"
+    }
+  },
+  {
+    "id": "maul",
+    "name": "Молот",
+    "weightGrams": 4536,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "2d6",
+      "damageType": "bludgeoning",
+      "properties": ["heavy", "twoHanded"],
+      "mastery": "Topple"
+    }
+  },
+  {
+    "id": "morningstar",
+    "name": "Моргенштерн",
+    "weightGrams": 1814,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [],
+      "mastery": "Sap"
+    }
+  },
+  {
+    "id": "pike",
+    "name": "Пика",
+    "weightGrams": 8165,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": ["heavy", "reach", "twoHanded"],
+      "mastery": "Push"
+    }
+  },
+  {
+    "id": "rapier",
+    "name": "Рапира",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": ["finesse"],
+      "mastery": "Vex"
+    }
+  },
+  {
+    "id": "scimitar",
+    "name": "Скимитар",
+    "weightGrams": 1361,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d6",
+      "damageType": "slashing",
+      "properties": ["finesse", "light"],
+      "mastery": "Nick"
+    }
+  },
+  {
+    "id": "shortsword",
+    "name": "Короткий меч",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": ["finesse", "light"],
+      "mastery": "Vex"
+    }
+  },
+  {
+    "id": "trident",
+    "name": "Трезубец",
+    "weightGrams": 1814,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": ["thrown"],
+      "mastery": "Topple",
+      "range": "20/60",
+      "versatile": "1d10"
+    }
+  },
+  {
+    "id": "warhammer",
+    "name": "Боевой молот",
+    "weightGrams": 2268,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d8",
+      "damageType": "bludgeoning",
+      "properties": [],
+      "mastery": "Push",
+      "versatile": "1d10"
+    }
+  },
+  {
+    "id": "pick",
+    "name": "Боевая кирка",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [],
+      "mastery": "Sap",
+      "versatile": "1d10"
+    }
+  },
+  {
+    "id": "whip",
+    "name": "Кнут",
+    "weightGrams": 1361,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "melee",
+      "damage": "1d4",
+      "damageType": "slashing",
+      "properties": ["finesse", "reach"],
+      "mastery": "Slow"
+    }
+  },
+  {
+    "id": "blowgun",
+    "name": "Духовая трубка",
+    "weightGrams": 454,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "ranged",
+      "damage": "1",
+      "damageType": "piercing",
+      "properties": ["ammunition", "loading"],
+      "mastery": "Vex",
+      "range": "25/100"
+    }
+  },
+  {
+    "id": "hand-crossbow",
+    "name": "Ручной арбалет",
+    "weightGrams": 1361,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "ranged",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": ["ammunition", "light", "loading"],
+      "mastery": "Vex",
+      "range": "30/120"
+    }
+  },
+  {
+    "id": "heavy-crossbow",
+    "name": "Тяжёлый арбалет",
+    "weightGrams": 8165,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "ranged",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": ["ammunition", "heavy", "loading", "twoHanded"],
+      "mastery": "Push",
+      "range": "100/400"
+    }
+  },
+  {
+    "id": "longbow",
+    "name": "Длинный лук",
+    "weightGrams": 907,
+    "combat": {
+      "kind": "weapon",
+      "category": "martial",
+      "mode": "ranged",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": ["ammunition", "heavy", "twoHanded"],
+      "mastery": "Slow",
+      "range": "150/600"
+    }
+  },
+  {
+    "id": "padded",
+    "name": "Стёганый доспех",
+    "weightGrams": 3629,
+    "combat": {
+      "kind": "armor",
+      "category": "light",
+      "base": 11,
+      "strength": 0,
+      "stealth": true
+    }
+  },
+  {
+    "id": "leather",
+    "name": "Кожаный доспех",
+    "weightGrams": 4536,
+    "combat": {
+      "kind": "armor",
+      "category": "light",
+      "base": 11,
+      "strength": 0,
+      "stealth": false
+    }
+  },
+  {
+    "id": "studded",
+    "name": "Проклёпанный кожаный доспех",
+    "weightGrams": 5897,
+    "combat": {
+      "kind": "armor",
+      "category": "light",
+      "base": 12,
+      "strength": 0,
+      "stealth": false
+    }
+  },
+  {
+    "id": "hide",
+    "name": "Шкурный доспех",
+    "weightGrams": 5443,
+    "combat": {
+      "kind": "armor",
+      "category": "medium",
+      "base": 12,
+      "strength": 0,
+      "stealth": false
+    }
+  },
+  {
+    "id": "shirt",
+    "name": "Кольчужная рубаха",
+    "weightGrams": 9072,
+    "combat": {
+      "kind": "armor",
+      "category": "medium",
+      "base": 13,
+      "strength": 0,
+      "stealth": false
+    }
+  },
+  {
+    "id": "scale",
+    "name": "Чешуйчатый доспех",
+    "weightGrams": 20412,
+    "combat": {
+      "kind": "armor",
+      "category": "medium",
+      "base": 14,
+      "strength": 0,
+      "stealth": true
+    }
+  },
+  {
+    "id": "breastplate",
+    "name": "Кираса",
+    "weightGrams": 9072,
+    "combat": {
+      "kind": "armor",
+      "category": "medium",
+      "base": 14,
+      "strength": 0,
+      "stealth": false
+    }
+  },
+  {
+    "id": "halfplate",
+    "name": "Полулаты",
+    "weightGrams": 18144,
+    "combat": {
+      "kind": "armor",
+      "category": "medium",
+      "base": 15,
+      "strength": 0,
+      "stealth": true
+    }
+  },
+  {
+    "id": "ring",
+    "name": "Колечный доспех",
+    "weightGrams": 18144,
+    "combat": {
+      "kind": "armor",
+      "category": "heavy",
+      "base": 14,
+      "strength": 0,
+      "stealth": true
+    }
+  },
+  {
+    "id": "chain",
+    "name": "Кольчуга",
+    "weightGrams": 24948,
+    "combat": {
+      "kind": "armor",
+      "category": "heavy",
+      "base": 16,
+      "strength": 13,
+      "stealth": true
+    }
+  },
+  {
+    "id": "splint",
+    "name": "Наборный доспех",
+    "weightGrams": 27216,
+    "combat": {
+      "kind": "armor",
+      "category": "heavy",
+      "base": 17,
+      "strength": 15,
+      "stealth": true
+    }
+  },
+  {
+    "id": "plate",
+    "name": "Латы",
+    "weightGrams": 29484,
+    "combat": {
+      "kind": "armor",
+      "category": "heavy",
+      "base": 18,
+      "strength": 15,
+      "stealth": true
+    }
+  },
+  {
+    "id": "shield",
+    "name": "Щит",
+    "weightGrams": 2722,
+    "combat": {
+      "kind": "armor",
+      "category": "shield",
+      "base": 2,
+      "strength": 0,
+      "stealth": false
+    }
+  }
+]

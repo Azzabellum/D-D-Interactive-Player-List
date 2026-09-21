@@ -1,0 +1,1683 @@
+[
+  {
+    "id": "core2024-species-aasimar",
+    "kind": "species",
+    "name": "Аасимар",
+    "summary": "Небесное наследие",
+    "description": "Герой, чья история связана с небесными силами. Подумайте, воспринимает ли он эту связь как призвание или как бремя.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false
+  },
+  {
+    "id": "core2024-species-dragonborn",
+    "kind": "species",
+    "name": "Драконорождённый",
+    "summary": "Драконье наследие",
+    "description": "Чешуя и драконий облик задают яркий образ персонажа. Выбор драконьего предка и его способности требует отдельного согласования.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false
+  },
+  {
+    "id": "core2024-species-dwarf",
+    "kind": "species",
+    "name": "Дварф",
+    "summary": "Стойкость и традиции",
+    "description": "Образ выносливого героя с прочными связями с ремеслом, родом или подземными поселениями. Традиции могут стать как опорой, так и причиной отправиться в путь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "firstLevelHpBonus": 1
+  },
+  {
+    "id": "core2024-species-elf",
+    "kind": "species",
+    "name": "Эльф",
+    "summary": "Долгая жизнь и магия",
+    "description": "Герой с долгой памятью и необычным взглядом на время. Продумайте его связь с природой, магическим знанием или собственным сообществом.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false
+  },
+  {
+    "id": "core2024-species-gnome",
+    "kind": "species",
+    "name": "Гном",
+    "summary": "Любознательность",
+    "description": "Небольшой герой с интересом к устройству мира. Его любопытство может проявляться в магии, изобретениях или исследовании неизведанного.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false
+  },
+  {
+    "id": "core2024-species-goliath",
+    "kind": "species",
+    "name": "Голиаф",
+    "summary": "Наследие великанов",
+    "description": "Великанье наследие подчёркивает внушительный образ героя. Выберите вместе с мастером подходящую линию происхождения и связанные с ней особенности.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false
+  },
+  {
+    "id": "core2024-species-halfling",
+    "kind": "species",
+    "name": "Полурослик",
+    "summary": "Смелость малого героя",
+    "description": "Небольшой рост не ограничивает масштаб приключений. Дом, друзья и обычные радости могут стать важной мотивацией такого персонажа.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false
+  },
+  {
+    "id": "core2024-species-human",
+    "kind": "species",
+    "name": "Человек",
+    "summary": "Разнообразие путей",
+    "description": "Гибкий образ для героя любой культуры и призвания. Начните с личной цели и обстоятельств, которые сделали приключения необходимыми.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false
+  },
+  {
+    "id": "core2024-species-orc",
+    "kind": "species",
+    "name": "Орк",
+    "summary": "Сила и решимость",
+    "description": "Образ героя с сильной волей и заметным присутствием. Его характер и культура не предопределены видом: определите их через биографию.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false
+  },
+  {
+    "id": "core2024-species-tiefling",
+    "kind": "species",
+    "name": "Тифлинг",
+    "summary": "Иномирное наследие",
+    "description": "Необычное наследие влияет на внешность героя и его место в мире. Отношение окружающих и самого персонажа к нему обсудите с мастером.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false
+  },
+  {
+    "id": "core2024-class-barbarian",
+    "kind": "class",
+    "name": "Варвар",
+    "summary": "Ярость и ближний бой",
+    "description": "Подходит для героя, который встречает опасность напрямую. Основные темы — ярость, стойкость и сила.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 2,
+      "saves": ["str", "con"],
+      "skills": [
+        "animalHandling",
+        "athletics",
+        "intimidation",
+        "nature",
+        "perception",
+        "survival"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие", "Воинское оружие"],
+        "armor": ["Лёгкие доспехи", "Средние доспехи", "Щиты"],
+        "tools": []
+      }
+    },
+    "hitDie": 12,
+    "startingGold": 75,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 15,
+        "items": [
+          {
+            "name": "Секира",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "melee",
+              "damage": "1d12",
+              "damageType": "slashing",
+              "properties": ["heavy", "twoHanded"],
+              "mastery": "Cleave"
+            },
+            "weightGrams": 3175
+          },
+          {
+            "name": "Ручной топор",
+            "quantity": 4,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "slashing",
+              "properties": ["light", "thrown"],
+              "mastery": "Vex",
+              "range": "20/60"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Набор путешественника",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-bard",
+    "kind": "class",
+    "name": "Бард",
+    "summary": "Вдохновение и магия",
+    "description": "Подходит для героя, который влияет на события словом, искусством и заклинаниями. Сильный образ для поддержки группы и общения.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 3,
+      "saves": ["dex", "cha"],
+      "skills": [
+        "acrobatics",
+        "animalHandling",
+        "arcana",
+        "athletics",
+        "deception",
+        "history",
+        "insight",
+        "intimidation",
+        "investigation",
+        "medicine",
+        "nature",
+        "perception",
+        "performance",
+        "persuasion",
+        "religion",
+        "sleightOfHand",
+        "stealth",
+        "survival"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие"],
+        "armor": ["Лёгкие доспехи"],
+        "tools": [],
+        "toolChoice": {
+          "count": 3,
+          "options": [
+            "Волынка",
+            "Барабан",
+            "Цимбалы",
+            "Флейта",
+            "Рожок",
+            "Лютня",
+            "Лира",
+            "Свирель",
+            "Шалмей",
+            "Виола"
+          ]
+        }
+      }
+    },
+    "hitDie": 8,
+    "startingGold": 90,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 19,
+        "items": [
+          {
+            "name": "Кожаный доспех",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "light",
+              "base": 11,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 4536
+          },
+          {
+            "name": "Кинжал",
+            "quantity": 2,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d4",
+              "damageType": "piercing",
+              "properties": ["finesse", "light", "thrown"],
+              "mastery": "Nick",
+              "range": "20/60"
+            },
+            "weightGrams": 454
+          },
+          {
+            "name": "Набор артиста",
+            "quantity": 1
+          }
+        ],
+        "toolOptions": [
+          "Волынка",
+          "Барабан",
+          "Цимбалы",
+          "Флейта",
+          "Рожок",
+          "Лютня",
+          "Лира",
+          "Свирель",
+          "Шалмей",
+          "Виола"
+        ],
+        "useClassTool": false
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-cleric",
+    "kind": "class",
+    "name": "Жрец",
+    "summary": "Вера и божественная магия",
+    "description": "Служение идеалу или божеству определяет путь героя. Заклинания позволяют поддерживать союзников и противостоять угрозам.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 2,
+      "saves": ["wis", "cha"],
+      "skills": ["history", "insight", "medicine", "persuasion", "religion"],
+      "equipment": {
+        "weapons": ["Простое оружие"],
+        "armor": ["Лёгкие доспехи", "Средние доспехи", "Щиты"],
+        "tools": []
+      }
+    },
+    "hitDie": 8,
+    "startingGold": 110,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 7,
+        "items": [
+          {
+            "name": "Кольчужная рубаха",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "medium",
+              "base": 13,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 9072
+          },
+          {
+            "name": "Щит",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "shield",
+              "base": 2,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 2722
+          },
+          {
+            "name": "Булава",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "bludgeoning",
+              "properties": [],
+              "mastery": "Sap"
+            },
+            "weightGrams": 1814
+          },
+          {
+            "name": "Священный символ",
+            "quantity": 1
+          },
+          {
+            "name": "Набор священника",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-druid",
+    "kind": "class",
+    "name": "Друид",
+    "summary": "Природа и превращения",
+    "description": "Герой связан с природой, её силами и формами жизни. Магия и превращения требуют выбора конкретных доступных возможностей.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 2,
+      "saves": ["int", "wis"],
+      "skills": [
+        "arcana",
+        "animalHandling",
+        "insight",
+        "medicine",
+        "nature",
+        "perception",
+        "religion",
+        "survival"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие"],
+        "armor": ["Лёгкие доспехи", "Щиты"],
+        "tools": ["Набор травника"]
+      }
+    },
+    "hitDie": 8,
+    "startingGold": 50,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 9,
+        "items": [
+          {
+            "name": "Кожаный доспех",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "light",
+              "base": 11,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 4536
+          },
+          {
+            "name": "Щит",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "shield",
+              "base": 2,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 2722
+          },
+          {
+            "name": "Серп",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d4",
+              "damageType": "slashing",
+              "properties": ["light"],
+              "mastery": "Nick"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Друидическая фокусировка: посох",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "bludgeoning",
+              "properties": [],
+              "mastery": "Topple",
+              "versatile": "1d8"
+            },
+            "weightGrams": 1814
+          },
+          {
+            "name": "Набор путешественника",
+            "quantity": 1
+          },
+          {
+            "name": "Набор травника",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-fighter",
+    "kind": "class",
+    "name": "Воин",
+    "summary": "Оружие и боевая выучка",
+    "description": "Мастер боевого ремесла. Подходит для множества образов: от дисциплинированного стража до странствующего искателя поединков.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 2,
+      "saves": ["str", "con"],
+      "skills": [
+        "acrobatics",
+        "animalHandling",
+        "athletics",
+        "history",
+        "insight",
+        "intimidation",
+        "persuasion",
+        "perception",
+        "survival"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие", "Воинское оружие"],
+        "armor": [
+          "Лёгкие доспехи",
+          "Средние доспехи",
+          "Тяжёлые доспехи",
+          "Щиты"
+        ],
+        "tools": []
+      }
+    },
+    "hitDie": 10,
+    "startingGold": 155,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 4,
+        "items": [
+          {
+            "name": "Кольчуга",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "heavy",
+              "base": 16,
+              "strength": 13,
+              "stealth": true
+            },
+            "weightGrams": 24948
+          },
+          {
+            "name": "Двуручный меч",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "melee",
+              "damage": "2d6",
+              "damageType": "slashing",
+              "properties": ["heavy", "twoHanded"],
+              "mastery": "Graze"
+            },
+            "weightGrams": 2722
+          },
+          {
+            "name": "Цеп",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "melee",
+              "damage": "1d8",
+              "damageType": "bludgeoning",
+              "properties": [],
+              "mastery": "Sap"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Метательное копьё",
+            "quantity": 8,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["thrown"],
+              "mastery": "Slow",
+              "range": "30/120"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Набор исследователя подземелий",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "pack-b",
+        "name": "Набор B",
+        "gold": 11,
+        "items": [
+          {
+            "name": "Проклёпанный кожаный доспех",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "light",
+              "base": 12,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 5897
+          },
+          {
+            "name": "Скимитар",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "slashing",
+              "properties": ["finesse", "light"],
+              "mastery": "Nick"
+            },
+            "weightGrams": 1361
+          },
+          {
+            "name": "Короткий меч",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["finesse", "light"],
+              "mastery": "Vex"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Длинный лук",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "ranged",
+              "damage": "1d8",
+              "damageType": "piercing",
+              "properties": ["ammunition", "heavy", "twoHanded"],
+              "mastery": "Slow",
+              "range": "150/600"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Стрела",
+            "quantity": 20
+          },
+          {
+            "name": "Колчан",
+            "quantity": 1
+          },
+          {
+            "name": "Набор исследователя подземелий",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-monk",
+    "kind": "class",
+    "name": "Монах",
+    "summary": "Дисциплина и подвижность",
+    "description": "Герой развивает тело и внутреннюю дисциплину. Образ строится вокруг подвижности, точности и боевого мастерства.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 2,
+      "saves": ["str", "dex"],
+      "skills": [
+        "acrobatics",
+        "athletics",
+        "history",
+        "insight",
+        "religion",
+        "stealth"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие", "Воинское оружие со свойством «Лёгкое»"],
+        "armor": [],
+        "tools": [],
+        "toolChoice": {
+          "count": 1,
+          "options": [
+            "Принадлежности алхимика",
+            "Принадлежности пивовара",
+            "Принадлежности каллиграфа",
+            "Инструменты плотника",
+            "Инструменты картографа",
+            "Инструменты сапожника",
+            "Поварская утварь",
+            "Инструменты стеклодува",
+            "Инструменты ювелира",
+            "Инструменты кожевника",
+            "Инструменты каменщика",
+            "Принадлежности художника",
+            "Инструменты гончара",
+            "Инструменты кузнеца",
+            "Инструменты ремонтника",
+            "Инструменты ткача",
+            "Инструменты резчика по дереву",
+            "Волынка",
+            "Барабан",
+            "Цимбалы",
+            "Флейта",
+            "Рожок",
+            "Лютня",
+            "Лира",
+            "Свирель",
+            "Шалмей",
+            "Виола"
+          ]
+        }
+      }
+    },
+    "hitDie": 8,
+    "startingGold": 50,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 11,
+        "items": [
+          {
+            "name": "Копьё",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["thrown"],
+              "mastery": "Sap",
+              "range": "20/60",
+              "versatile": "1d8"
+            },
+            "weightGrams": 1361
+          },
+          {
+            "name": "Кинжал",
+            "quantity": 5,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d4",
+              "damageType": "piercing",
+              "properties": ["finesse", "light", "thrown"],
+              "mastery": "Nick",
+              "range": "20/60"
+            },
+            "weightGrams": 454
+          },
+          {
+            "name": "Набор путешественника",
+            "quantity": 1
+          }
+        ],
+        "toolOptions": [
+          "Принадлежности алхимика",
+          "Принадлежности пивовара",
+          "Принадлежности каллиграфа",
+          "Инструменты плотника",
+          "Инструменты картографа",
+          "Инструменты сапожника",
+          "Поварская утварь",
+          "Инструменты стеклодува",
+          "Инструменты ювелира",
+          "Инструменты кожевника",
+          "Инструменты каменщика",
+          "Принадлежности художника",
+          "Инструменты гончара",
+          "Инструменты кузнеца",
+          "Инструменты ремонтника",
+          "Инструменты ткача",
+          "Инструменты резчика по дереву",
+          "Волынка",
+          "Барабан",
+          "Цимбалы",
+          "Флейта",
+          "Рожок",
+          "Лютня",
+          "Лира",
+          "Свирель",
+          "Шалмей",
+          "Виола"
+        ],
+        "useClassTool": true
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-paladin",
+    "kind": "class",
+    "name": "Паладин",
+    "summary": "Клятва и защита",
+    "description": "Воин, чью силу направляет клятва. Выберите принципы, которые герой готов защищать даже в трудных обстоятельствах.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 2,
+      "saves": ["wis", "cha"],
+      "skills": [
+        "athletics",
+        "insight",
+        "intimidation",
+        "medicine",
+        "persuasion",
+        "religion"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие", "Воинское оружие"],
+        "armor": [
+          "Лёгкие доспехи",
+          "Средние доспехи",
+          "Тяжёлые доспехи",
+          "Щиты"
+        ],
+        "tools": []
+      }
+    },
+    "hitDie": 10,
+    "startingGold": 150,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 9,
+        "items": [
+          {
+            "name": "Кольчуга",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "heavy",
+              "base": 16,
+              "strength": 13,
+              "stealth": true
+            },
+            "weightGrams": 24948
+          },
+          {
+            "name": "Щит",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "shield",
+              "base": 2,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 2722
+          },
+          {
+            "name": "Длинный меч",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "melee",
+              "damage": "1d8",
+              "damageType": "slashing",
+              "properties": [],
+              "mastery": "Sap",
+              "versatile": "1d10"
+            },
+            "weightGrams": 1361
+          },
+          {
+            "name": "Метательное копьё",
+            "quantity": 6,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["thrown"],
+              "mastery": "Slow",
+              "range": "30/120"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Священный символ",
+            "quantity": 1
+          },
+          {
+            "name": "Набор священника",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-ranger",
+    "kind": "class",
+    "name": "Следопыт",
+    "summary": "Путь и выслеживание",
+    "description": "Герой умеет действовать вдали от безопасных дорог. Сочетает боевую подготовку, знание местности и магию.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 3,
+      "saves": ["str", "dex"],
+      "skills": [
+        "animalHandling",
+        "athletics",
+        "insight",
+        "investigation",
+        "nature",
+        "perception",
+        "stealth",
+        "survival"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие", "Воинское оружие"],
+        "armor": ["Лёгкие доспехи", "Средние доспехи", "Щиты"],
+        "tools": []
+      }
+    },
+    "hitDie": 10,
+    "startingGold": 150,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 7,
+        "items": [
+          {
+            "name": "Проклёпанный кожаный доспех",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "light",
+              "base": 12,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 5897
+          },
+          {
+            "name": "Скимитар",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "slashing",
+              "properties": ["finesse", "light"],
+              "mastery": "Nick"
+            },
+            "weightGrams": 1361
+          },
+          {
+            "name": "Короткий меч",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["finesse", "light"],
+              "mastery": "Vex"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Длинный лук",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "ranged",
+              "damage": "1d8",
+              "damageType": "piercing",
+              "properties": ["ammunition", "heavy", "twoHanded"],
+              "mastery": "Slow",
+              "range": "150/600"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Стрела",
+            "quantity": 20
+          },
+          {
+            "name": "Колчан",
+            "quantity": 1
+          },
+          {
+            "name": "Друидическая фокусировка: веточка омелы",
+            "quantity": 1
+          },
+          {
+            "name": "Набор путешественника",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-rogue",
+    "kind": "class",
+    "name": "Плут",
+    "summary": "Навыки и точный удар",
+    "description": "Специалист, находящий возможности там, где другие видят препятствия. Подходит для разведчика, ловкого мастера или хитрого авантюриста.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 4,
+      "saves": ["dex", "int"],
+      "skills": [
+        "acrobatics",
+        "athletics",
+        "deception",
+        "insight",
+        "intimidation",
+        "investigation",
+        "perception",
+        "persuasion",
+        "sleightOfHand",
+        "stealth"
+      ],
+      "expertiseCount": 2,
+      "equipment": {
+        "weapons": [
+          "Простое оружие",
+          "Воинское оружие со свойством «Фехтовальное» или «Лёгкое»"
+        ],
+        "armor": ["Лёгкие доспехи"],
+        "tools": ["Воровские инструменты"]
+      }
+    },
+    "hitDie": 8,
+    "startingGold": 100,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 8,
+        "items": [
+          {
+            "name": "Кожаный доспех",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "light",
+              "base": 11,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 4536
+          },
+          {
+            "name": "Кинжал",
+            "quantity": 2,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d4",
+              "damageType": "piercing",
+              "properties": ["finesse", "light", "thrown"],
+              "mastery": "Nick",
+              "range": "20/60"
+            },
+            "weightGrams": 454
+          },
+          {
+            "name": "Короткий меч",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "martial",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["finesse", "light"],
+              "mastery": "Vex"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Короткий лук",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "ranged",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["ammunition", "twoHanded"],
+              "mastery": "Vex",
+              "range": "80/320"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Стрела",
+            "quantity": 20
+          },
+          {
+            "name": "Колчан",
+            "quantity": 1
+          },
+          {
+            "name": "Воровские инструменты",
+            "quantity": 1
+          },
+          {
+            "name": "Набор взломщика",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-sorcerer",
+    "kind": "class",
+    "name": "Чародей",
+    "summary": "Врождённая магия",
+    "description": "Магическая сила является частью самого героя. Её происхождение и отношение персонажа к ней становятся важной частью истории.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 2,
+      "saves": ["con", "cha"],
+      "skills": [
+        "arcana",
+        "deception",
+        "insight",
+        "intimidation",
+        "persuasion",
+        "religion"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие"],
+        "armor": [],
+        "tools": []
+      }
+    },
+    "hitDie": 6,
+    "startingGold": 50,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 28,
+        "items": [
+          {
+            "name": "Копьё",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["thrown"],
+              "mastery": "Sap",
+              "range": "20/60",
+              "versatile": "1d8"
+            },
+            "weightGrams": 1361
+          },
+          {
+            "name": "Кинжал",
+            "quantity": 2,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d4",
+              "damageType": "piercing",
+              "properties": ["finesse", "light", "thrown"],
+              "mastery": "Nick",
+              "range": "20/60"
+            },
+            "weightGrams": 454
+          },
+          {
+            "name": "Магическая фокусировка: кристалл",
+            "quantity": 1
+          },
+          {
+            "name": "Набор исследователя подземелий",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-warlock",
+    "kind": "class",
+    "name": "Колдун",
+    "summary": "Договор и тайное знание",
+    "description": "Герой получает магические возможности через необычную связь. Обсудите с мастером природу покровителя и ожидания обеих сторон.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 2,
+      "saves": ["wis", "cha"],
+      "skills": [
+        "arcana",
+        "deception",
+        "history",
+        "intimidation",
+        "investigation",
+        "nature",
+        "religion"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие"],
+        "armor": ["Лёгкие доспехи"],
+        "tools": []
+      }
+    },
+    "hitDie": 8,
+    "startingGold": 100,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 15,
+        "items": [
+          {
+            "name": "Кожаный доспех",
+            "quantity": 1,
+            "combat": {
+              "kind": "armor",
+              "category": "light",
+              "base": 11,
+              "strength": 0,
+              "stealth": false
+            },
+            "weightGrams": 4536
+          },
+          {
+            "name": "Серп",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d4",
+              "damageType": "slashing",
+              "properties": ["light"],
+              "mastery": "Nick"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Кинжал",
+            "quantity": 2,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d4",
+              "damageType": "piercing",
+              "properties": ["finesse", "light", "thrown"],
+              "mastery": "Nick",
+              "range": "20/60"
+            },
+            "weightGrams": 454
+          },
+          {
+            "name": "Магическая фокусировка: сфера",
+            "quantity": 1
+          },
+          {
+            "name": "Книга об оккультизме",
+            "quantity": 1
+          },
+          {
+            "name": "Набор учёного",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-class-wizard",
+    "kind": "class",
+    "name": "Волшебник",
+    "summary": "Изучение заклинаний",
+    "description": "Герой развивает магию через знания и практику. Книга заклинаний и поиск новых сведений могут направлять его приключения.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "classRules": {
+      "count": 2,
+      "saves": ["int", "wis"],
+      "skills": [
+        "arcana",
+        "history",
+        "insight",
+        "investigation",
+        "medicine",
+        "nature",
+        "religion"
+      ],
+      "equipment": {
+        "weapons": ["Простое оружие"],
+        "armor": [],
+        "tools": []
+      }
+    },
+    "hitDie": 6,
+    "startingGold": 55,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 5,
+        "items": [
+          {
+            "name": "Кинжал",
+            "quantity": 2,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d4",
+              "damageType": "piercing",
+              "properties": ["finesse", "light", "thrown"],
+              "mastery": "Nick",
+              "range": "20/60"
+            },
+            "weightGrams": 454
+          },
+          {
+            "name": "Магическая фокусировка: посох",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "bludgeoning",
+              "properties": [],
+              "mastery": "Topple",
+              "versatile": "1d8"
+            },
+            "weightGrams": 1814
+          },
+          {
+            "name": "Мантия",
+            "quantity": 1
+          },
+          {
+            "name": "Книга заклинаний",
+            "quantity": 1
+          },
+          {
+            "name": "Набор учёного",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-background-acolyte",
+    "kind": "background",
+    "name": "Послушник",
+    "summary": "Храм и служение",
+    "description": "До приключений вашу жизнь определяли храм и служение. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "boostAbilities": [3, 4, 5],
+    "trainedSkills": ["insight", "religion"],
+    "toolOptions": ["Принадлежности каллиграфа"],
+    "startingGold": 50,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 8,
+        "items": [
+          {
+            "name": "Принадлежности каллиграфа",
+            "quantity": 1
+          },
+          {
+            "name": "Книга молитв",
+            "quantity": 1
+          },
+          {
+            "name": "Священный символ",
+            "quantity": 1
+          },
+          {
+            "name": "Пергамент",
+            "quantity": 10
+          },
+          {
+            "name": "Мантия",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-background-artisan",
+    "kind": "background",
+    "name": "Ремесленник",
+    "summary": "Мастерская и ремесло",
+    "description": "До приключений вашу жизнь определяли мастерская и ремесло. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-charlatan",
+    "kind": "background",
+    "name": "Шарлатан",
+    "summary": "Уловки и чужие роли",
+    "description": "До приключений вашу жизнь определяли уловки и чужие роли. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-criminal",
+    "kind": "background",
+    "name": "Преступник",
+    "summary": "Жизнь вне закона",
+    "description": "До приключений вашу жизнь определяли жизнь вне закона. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "boostAbilities": [1, 2, 3],
+    "trainedSkills": ["sleightOfHand", "stealth"],
+    "toolOptions": ["Воровские инструменты"],
+    "startingGold": 50,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 16,
+        "items": [
+          {
+            "name": "Кинжал",
+            "quantity": 2,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d4",
+              "damageType": "piercing",
+              "properties": ["finesse", "light", "thrown"],
+              "mastery": "Nick",
+              "range": "20/60"
+            },
+            "weightGrams": 454
+          },
+          {
+            "name": "Воровские инструменты",
+            "quantity": 1
+          },
+          {
+            "name": "Ломик",
+            "quantity": 1
+          },
+          {
+            "name": "Поясной кошель",
+            "quantity": 2
+          },
+          {
+            "name": "Дорожная одежда",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-background-entertainer",
+    "kind": "background",
+    "name": "Артист",
+    "summary": "Сцена и публика",
+    "description": "До приключений вашу жизнь определяли сцена и публика. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-farmer",
+    "kind": "background",
+    "name": "Фермер",
+    "summary": "Земля и труд",
+    "description": "До приключений вашу жизнь определяли земля и труд. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-guard",
+    "kind": "background",
+    "name": "Страж",
+    "summary": "Служба и бдительность",
+    "description": "До приключений вашу жизнь определяли служба и бдительность. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-guide",
+    "kind": "background",
+    "name": "Проводник",
+    "summary": "Дороги и дикая местность",
+    "description": "До приключений вашу жизнь определяли дороги и дикая местность. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-hermit",
+    "kind": "background",
+    "name": "Отшельник",
+    "summary": "Уединение и размышление",
+    "description": "До приключений вашу жизнь определяли уединение и размышление. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-merchant",
+    "kind": "background",
+    "name": "Торговец",
+    "summary": "Сделки и связи",
+    "description": "До приключений вашу жизнь определяли сделки и связи. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-noble",
+    "kind": "background",
+    "name": "Благородный",
+    "summary": "Род и общественное положение",
+    "description": "До приключений вашу жизнь определяли род и общественное положение. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-sage",
+    "kind": "background",
+    "name": "Мудрец",
+    "summary": "Учёба и исследования",
+    "description": "До приключений вашу жизнь определяли учёба и исследования. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "boostAbilities": [2, 3, 4],
+    "trainedSkills": ["arcana", "history"],
+    "toolOptions": ["Принадлежности каллиграфа"],
+    "startingGold": 50,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 8,
+        "items": [
+          {
+            "name": "Боевой посох",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "bludgeoning",
+              "properties": [],
+              "mastery": "Topple",
+              "versatile": "1d8"
+            },
+            "weightGrams": 1814
+          },
+          {
+            "name": "Принадлежности каллиграфа",
+            "quantity": 1
+          },
+          {
+            "name": "Книга по истории",
+            "quantity": 1
+          },
+          {
+            "name": "Пергамент",
+            "quantity": 8
+          },
+          {
+            "name": "Мантия",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "core2024-background-sailor",
+    "kind": "background",
+    "name": "Моряк",
+    "summary": "Корабли и путешествия",
+    "description": "До приключений вашу жизнь определяли корабли и путешествия. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-scribe",
+    "kind": "background",
+    "name": "Писец",
+    "summary": "Записи и документы",
+    "description": "До приключений вашу жизнь определяли записи и документы. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "startingGold": 50
+  },
+  {
+    "id": "core2024-background-soldier",
+    "kind": "background",
+    "name": "Солдат",
+    "summary": "Военная служба",
+    "description": "До приключений вашу жизнь определяли военная служба. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "boostAbilities": [0, 1, 2],
+    "trainedSkills": ["athletics", "intimidation"],
+    "toolOptions": [
+      "Игральные кости",
+      "Драконьи шахматы",
+      "Игральные карты",
+      "Ставка трёх драконов"
+    ],
+    "startingGold": 50,
+    "startingPacks": [
+      {
+        "id": "pack-a",
+        "name": "Набор A",
+        "gold": 14,
+        "items": [
+          {
+            "name": "Копьё",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "melee",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["thrown"],
+              "mastery": "Sap",
+              "range": "20/60",
+              "versatile": "1d8"
+            },
+            "weightGrams": 1361
+          },
+          {
+            "name": "Короткий лук",
+            "quantity": 1,
+            "combat": {
+              "kind": "weapon",
+              "category": "simple",
+              "mode": "ranged",
+              "damage": "1d6",
+              "damageType": "piercing",
+              "properties": ["ammunition", "twoHanded"],
+              "mastery": "Vex",
+              "range": "80/320"
+            },
+            "weightGrams": 907
+          },
+          {
+            "name": "Стрела",
+            "quantity": 20
+          },
+          {
+            "name": "Набор лекаря",
+            "quantity": 1
+          },
+          {
+            "name": "Колчан",
+            "quantity": 1
+          },
+          {
+            "name": "Дорожная одежда",
+            "quantity": 1
+          }
+        ],
+        "useBackgroundTool": true
+      }
+    ]
+  },
+  {
+    "id": "core2024-background-wayfarer",
+    "kind": "background",
+    "name": "Скиталец",
+    "summary": "Улица и выживание",
+    "description": "До приключений вашу жизнь определяли улица и выживание. Опишите, чему герой научился, с кем сохранил связь и почему оставил прежнюю жизнь.",
+    "source": "PHB 2024 · краткий обзор D&D IPL",
+    "archived": false,
+    "boostAbilities": [1, 4, 5],
+    "trainedSkills": ["insight", "stealth"],
+    "toolOptions": ["Воровские инструменты"],
+    "startingGold": 50
+  }
+]

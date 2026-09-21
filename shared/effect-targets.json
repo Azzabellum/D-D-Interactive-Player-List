@@ -1,0 +1,106 @@
+[
+  {
+    "id": "ac",
+    "name": "Класс доспеха"
+  },
+  {
+    "id": "initiative",
+    "name": "Инициатива"
+  },
+  {
+    "id": "save:str",
+    "name": "Спасбросок: Сила"
+  },
+  {
+    "id": "save:dex",
+    "name": "Спасбросок: Ловкость"
+  },
+  {
+    "id": "save:con",
+    "name": "Спасбросок: Телосложение"
+  },
+  {
+    "id": "save:int",
+    "name": "Спасбросок: Интеллект"
+  },
+  {
+    "id": "save:wis",
+    "name": "Спасбросок: Мудрость"
+  },
+  {
+    "id": "save:cha",
+    "name": "Спасбросок: Харизма"
+  },
+  {
+    "id": "skill:acrobatics",
+    "name": "Акробатика"
+  },
+  {
+    "id": "skill:animalHandling",
+    "name": "Уход за животными"
+  },
+  {
+    "id": "skill:arcana",
+    "name": "Магия"
+  },
+  {
+    "id": "skill:athletics",
+    "name": "Атлетика"
+  },
+  {
+    "id": "skill:deception",
+    "name": "Обман"
+  },
+  {
+    "id": "skill:history",
+    "name": "История"
+  },
+  {
+    "id": "skill:insight",
+    "name": "Проницательность"
+  },
+  {
+    "id": "skill:intimidation",
+    "name": "Запугивание"
+  },
+  {
+    "id": "skill:investigation",
+    "name": "Анализ"
+  },
+  {
+    "id": "skill:medicine",
+    "name": "Медицина"
+  },
+  {
+    "id": "skill:nature",
+    "name": "Природа"
+  },
+  {
+    "id": "skill:perception",
+    "name": "Внимательность"
+  },
+  {
+    "id": "skill:performance",
+    "name": "Выступление"
+  },
+  {
+    "id": "skill:persuasion",
+    "name": "Убеждение"
+  },
+  {
+    "id": "skill:religion",
+    "name": "Религия"
+  },
+  {
+    "id": "skill:sleightOfHand",
+    "name": "Ловкость рук"
+  },
+  {
+    "id": "skill:stealth",
+    "name": "Скрытность"
+  },
+  {
+    "id": "skill:survival",
+    "name": "Выживание"
+  }
+]
